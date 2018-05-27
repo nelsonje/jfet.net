@@ -22,17 +22,8 @@
   </body>
 
   <script>
-    var promise = document.getElementById('myvideo').play();
-    if (promise !== undefined) {
-      promise.then(_ => {
-        // Autoplay started!
-        //alert('started');
-        document.getElementById('myvideo').muted=false;
-      }).catch(error => {
-        alert('prevented');
-        // Autoplay was prevented.
-        // Show a "Play" button so that user can start playback.
-      });
-    }
+    var herovide = document.getElementById('myvideo);
+    herovide.autoplay=true;
+    herovide.load();
   </script>
 </html>
