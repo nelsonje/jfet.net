@@ -22,6 +22,16 @@
   </body>
 
   <script>
-    
+    var promise = document.querySelector('myvideo').play();
+    if (promise !== undefined) {
+    promise.then(_ => {
+    // Autoplay started!
+    alert('started');
+    }).catch(error => {
+        alert('prevented');
+    // Autoplay was prevented.
+    // Show a "Play" button so that user can start playback.
+    });
+    }
   </script>
 </html>
