@@ -27,6 +27,7 @@
       promise.then(_ => {
         // Autoplay started!
         alert('started');
+        document.getElementById('myvideo').muted=false;
       }).catch(error => {
         alert('prevented');
         // Autoplay was prevented.
