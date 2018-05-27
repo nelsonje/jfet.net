@@ -22,7 +22,7 @@
   </body>
 
   <script>
-    var promise = document.querySelector('myvideo').play();
+    var promise = document.getElementById('myvideo').play();
     if (promise !== undefined) {
       promise.then(_ => {
         // Autoplay started!
