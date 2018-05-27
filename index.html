@@ -16,8 +16,12 @@
   </head>
   <body>
     <video id="myvideo" autoplay playsinline loop controls="true"
-           onclick="this.play();" onmousemove="this.play();"
+           onclick="this.play();"
            poster="media/jfet.net.jpg"
            src="media/jfet.net-240p-5fps.mp4" type="video/mp4" />
+
+    <script>
+      document.getElementById('myvideo').play();
+    </script>
   </body>
 </html>
